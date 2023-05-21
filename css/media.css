@@ -15,7 +15,36 @@
   .container {
     max-width: 766px;
   }
-  /* ! ======================= CUSTOMERS ======================== */
+  /* ! =========================== HERO  ========================= */
+  .hero {
+    max-width: 768px;
+  }
+  .hero-title {
+    max-width: 496px;
+    margin-bottom: 36px;
+    font-size: 56px;
+    line-height: 1.07;
+  }
+  /* ! ========================== FEATURES  ====================== */
+  .feature-title {
+    text-align-last: left;
+  }
+  .features-list {
+    gap: 72px 24px;
+    align-items: start;
+    justify-content: start;
+  }
+  .feature-container {
+    max-width: 355px;
+  }
+  /* ! ======================== OUR TEAM  ======================== */
+  /* .team-container {
+    max-width: 552px;
+  } */
+  .team-list {
+    gap: 64px 24px;
+  }
+  /* ! ======================== CUSTOMERS ======================== */
 
   .customers-list {
     gap: 24px;
@@ -68,7 +97,46 @@
   .container {
     max-width: 1158px;
   }
+  /* ! =========================== HERO  ========================= */
+  .hero {
+    max-width: 1440px;
+  }
+  .hero-title {
+    margin-bottom: 48px;
+  }
+  /* ! ========================== FEATURES  ====================== */
 
+  .features-section {
+    padding: 120px 0;
+  }
+  .icon-bg {
+    display: flex;
+  }
+  .feature-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .features-list {
+    flex-wrap: nowrap;
+  }
+  .feature-container {
+    max-width: 264px;
+  }
+  .feature {
+    font-weight: 400;
+  }
+  /* ! ======================== PRESENTATION  ==================== */
+  .presentation-section {
+    display: block;
+  } /* ! ======================== OUR TEAM  ======================== */
+  .team {
+    padding: 120px 0;
+  }
+  .team-list {
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
   /* ! ======================== CUSTOMERS ======================== */
   .customers-section {
     padding: 120px 0;
