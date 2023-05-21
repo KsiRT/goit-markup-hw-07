@@ -1,0 +1,93 @@
+@media screen and (min-width: 428px) {
+  .container {
+    max-width: 428px;
+  }
+  /* ! ======================== CUSTOMERS ======================== */
+
+  /* ! ========================== FOOTER ========================= */
+  .footer-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+/*? ============================= Tablet ========================  */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 766px;
+  }
+  /* ! ======================= CUSTOMERS ======================== */
+
+  .customers-list {
+    gap: 24px;
+  }
+
+  .customer {
+    max-width: 168px;
+  }
+  /* ! ========================== FOOTER ========================= */
+  .footer-container {
+    max-width: 552px;
+    align-items: normal;
+    justify-content: start;
+  }
+
+  .logo-n-text {
+    display: block;
+    margin: 0;
+    margin-bottom: 72px;
+    margin-right: 24px;
+  }
+
+  .soc-media-footer {
+    padding: 0;
+    max-width: 208px;
+    display: block;
+    margin: 0;
+  }
+
+  .footer-soc-title {
+    text-align: left;
+  }
+
+  .sub-field-wrap {
+    display: block;
+  }
+
+  .sub-form {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .sub-field {
+    width: 264px;
+  }
+}
+/* ? ========================== Desktop ======================== ? */
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1158px;
+  }
+
+  /* ! ======================== CUSTOMERS ======================== */
+  .customers-section {
+    padding: 120px 0;
+  }
+  .customers-list {
+    flex-wrap: nowrap;
+  }
+  /* ! ========================= FOOTER ========================== */
+
+  .footer-container {
+    max-width: 1158px;
+    flex-wrap: nowrap;
+  }
+
+  .logo-n-text {
+    margin-right: 120px;
+  }
+
+  .soc-media-footer {
+    margin-right: 80px;
+  }
+}
