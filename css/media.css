@@ -13,7 +13,26 @@
 /*? ============================= Tablet ========================  */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 766px;
+    max-width: 768px;
+  }
+  /* ! =========================== HEADER ======================== */
+
+  .logo {
+    margin-right: 120px;
+  }
+  .nav-links {
+    padding: 0;
+  }
+  .nav-list {
+    display: flex;
+  }
+  .address {
+    display: flex;
+  }
+  .contact-list {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 0;
   }
   /* ! =========================== HERO  ========================= */
   .hero {
@@ -35,7 +54,7 @@
     justify-content: start;
   }
   .feature-container {
-    max-width: 355px;
+    max-width: 356px;
   }
   /* ! ======================== OUR TEAM  ======================== */
   /* .team-container {
@@ -96,6 +115,24 @@
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* ! =========================== HEADER ======================== */
+  .nav-links {
+    padding: 0;
+  }
+  .nav-list {
+    display: flex;
+  }
+  .contact {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .contact-list {
+    flex-direction: row;
+    gap: 40px;
+    padding: 24px 0;
   }
   /* ! =========================== HERO  ========================= */
   .hero {
@@ -157,5 +194,12 @@
 
   .soc-media-footer {
     margin-right: 80px;
+  }
+
+  .sub-field {
+    border: 1px solid var(--white-bg);
+  }
+  .sub-field::placeholder {
+    color: var(--white-bg);
   }
 }
