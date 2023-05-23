@@ -33,6 +33,7 @@ body {
 .link {
   text-decoration: none;
   cursor: pointer;
+  font-style: normal;
 }
 
 .section {
@@ -57,6 +58,8 @@ ol {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -64,22 +67,26 @@ img {
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
-  outline: 2px coral dashed;
+  /* outline: 2px coral dashed; */
 }
 .title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
 }
+
 /*!-------------------------------- Header ------------------------*/
 
 .header {
   border-bottom: 1px solid var(--btn-primary);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  position: relative;
 }
+
 .header-container {
   display: flex;
+  justify-content: space-between;
 }
 
 /*!--------------------------------- Logo -------------------------*/
@@ -170,6 +177,94 @@ img {
   padding: 24px 0;
 }
 
+.mob-menu-btn {
+  display: block;
+  height: 32px;
+  width: 32px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/**=========================== MOB MENU ========================**/
+.mob-menu-close {
+  position: absolute;
+  z-index: 1;
+  height: 24px;
+  width: 24px;
+  background-color: var(--white-bg);
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 24px;
+  top: 24px;
+  cursor: pointer;
+}
+
+.mob-menu-close:focus {
+  background-color: var(--pressed-state);
+  fill: var(--white-bg);
+  border: none;
+}
+
+.mob-menu-wrap {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white-bg);
+  top: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  padding: 80px 35px 40px;
+}
+.mob-menu-icon {
+  stroke: var(--dark);
+}
+
+.mob-nav-item {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  margin-bottom: 40px;
+}
+.mob-nav-link {
+  color: var(--dark);
+}
+.current-menu-item {
+  color: var(--pressed-state);
+}
+.mob-menu-address {
+  margin-top: auto;
+}
+
+.mob-menu-number {
+  margin-bottom: 40px;
+}
+.mob-contact-number {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--primary-brand);
+}
+
+.mob-menu-mail {
+  margin-bottom: 48px;
+}
+.mob-contact-mail {
+  color: var(--primary-text);
+}
+
+.mob-soc {
+  display: flex;
+  justify-content: space-between;
+}
 /* !---------------------------- Hero -----------------------------*/
 
 .hero-container {
@@ -185,12 +280,23 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/bcg-people-office.jpg);
+    url(../images/bcg-people-office-mob.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 428px;
+  /* max-width: 428px; */
   margin: 0 auto;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2ddpx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-phone-2x.jpg);
+  }
 }
 .hero-title {
   color: var(--white-bg);
